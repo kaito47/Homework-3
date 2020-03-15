@@ -50,53 +50,20 @@ var includeUppercase = confirm("Include uppercase characters?")
 var includeNumbers = confirm("Include numbers?")
 var includeSpecialCharacters = confirm("Include special characters?")
 
+// Prompt values
+var includedCharacters = ["includeLowercase", "includeUppercase", "includeNumbers", "includeSpecialcharacters"]
 
 // Write password to the #password input
-function writePassword(passwordLength, includedLowercase, includedUppercase, includedNumbers, includedSpecialCharacters) {
-  var password = generatePassword(lowercase, uppercase, numbers, specialCharacters);
+function writePassword(passwordLength, includeLowercase, includeUppercase, includeNumbers, includeSpecialCharacters) {
+  for (i = 0; i = passwordLength; i++) {
+    Math.floor(math.random()*passwordLength)
+// Generating password
+  var password = generatePassword(includedCharacters);
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
+  return password;
+
+  }
 }
-// Prompt values
-var includedCharacters = ["includeLowercase", "includeUppercase", "includeNumbers", "includeSpecialcharacters"]
-
-// Confirmation answers for loop
-//var chosenCharacters = confirm(includedCharacters[i])
-
-for (i = 0; i < includedCharacters.length; i++) {
-   
-
-}
-  // Loop 10 times
-  for (var i = 0; i < 10; i++) {
-    // Generate a random number between 1 and 10
-    // Math.floor will round down, meaning we would get a number between 0 and 9, so we'll always add 1 to bump it up.
-    var num = Math.floor(Math.random() * 10) + 1;
-
-
-// Adding event listeners to confirmation prompts
-
-//includeLowercase.addEventListener("input", )
-// Prompt values
-
-//var chosenCharacters = includedCharacters.value 
-//var chosenCharacters = confirm(includedCharacters[i].q)
-
-alert()
-   //alert("Include" + "characterChoices")
-   //for (i = 0; i < characterChoices.length; i++) {
-     //console.log(characterChoices[i])
-   //}
-   
-
-
-
-// Valuation of password length
-promptLength.value = passwordLength
-
-
-// Selecting which character variables to include
-
-// For loop for random character choice based on length 
